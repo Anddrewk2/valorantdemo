@@ -1,0 +1,292 @@
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#header{
+    height: 50px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    animation-delay: 4ms;
+
+}
+#nav{
+ display: inline-block;
+
+}
+#nav li {
+    display: inline-block;
+    position: relative;
+    
+}
+#nav  li a {
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    line-height: 50px;
+    padding:0 24px;
+display: block;
+}
+ 
+
+#nav> li:hover > a {
+
+    color: black;
+    background-color: #ccc;
+
+}
+#nav .subnav{
+    display: none;
+  position:absolute;
+  top: 100%;
+  left:0%;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba (0, 0, 0, 0.3);
+
+}
+#nav li:hover .subnav{
+    display: block;
+
+}
+#nav .subnav  a {
+    width: 137.79px;
+    color: black;
+
+}
+#nav .subnav a {
+    text-transform: none;
+}
+
+
+#nav .subnav li:hover{
+    color: black;
+    background-color: #ccc;
+}
+
+
+
+.navdown{
+    font-size: 10px;
+}
+
+#header .search-menu{
+    float: right;
+    line-height: 50px;
+    color: #ccc;
+    padding: 0 16px;
+    font-size: 20px;
+}
+
+.search-menu:hover{
+    background-color: red;
+}
+/* #slider{
+    margin-top: 50px;
+    padding-top: 50%;
+background: url('/assets/img/slider/slider1.jpg') top center / cover repeat ;
+
+} */
+
+#content{
+
+}
+.contact{
+    display: flex;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+.content-section{
+
+    width: 1000px;
+    padding:64px;
+    margin-left: auto;
+    margin-right: auto;
+    
+  
+}
+.section-heading{
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+.section-sub-heading{
+    margin-top: 25px;
+    font-size: 15px;
+    font-style: italic ;
+    /* chữ in nghiêng  */
+    opacity:0.6;
+}
+.section-heading,
+.section-sub-heading {
+    text-align: center;
+}
+.section-text{
+    margin-top: 25px;
+    font-size: 15px;
+    text-align: justify;
+
+}
+.role{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vaitro{
+    margin-left: 20px;
+    float: left;
+    text-align: center;
+    margin-top: 12px;   
+}
+.cuaai{
+    margin-left: 10px;
+    margin-right: 10px;
+width: 100px;
+height: 83px;
+border-radius: 100px;
+}
+#Footer{
+  
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    background-color: honeydew;
+   
+}
+.footer-text{
+
+    padding:0 16px;
+    font-size: 20px;
+    margin-left: 10px;
+  text-decoration: none;
+  color: black;
+  line-height: 80px;
+}
+
+.contact-info{
+    font-size: 18px;
+    line-height: 1.5;
+    margin-left: 40px;
+}
+.contact-info i[class*="ti-"]{
+    display: inline-block;
+    width: 30px;
+  
+}
+.contact-content{
+    width: 1000px;
+}
+.contact-form .form-control{
+    font-size: 15px;
+ padding: 10px;
+border: 1px solid #ccc;
+width: 100%;
+}
+.contact-content{
+    margin-top: 48px;
+}
+.col{
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.col-hafl{
+    width: 50%;
+}
+.col .col-full{
+    margin-top: 8px;
+    width: 100%;
+}
+.button {
+    margin-top: 16px;
+    color: #fff;
+    background-color: black;
+    border: 1px solid #000;
+    padding: 10px 16px;
+    float:right;
+    margin-right: 11px;
+
+}
+.button:hover{
+    cursor: pointer;
+    color: #000;
+    background-color:white;
+}
+.hero{
+     margin-top: 300px;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+        position: relative;
+        padding: 0,5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+.valorant{
+    text-align: center;
+}
+.valorant h1{
+    font-size: 160px;
+    color:#fff;
+    font-weight: 600;
+}
+.valorant a{
+    font-size: 24px;
+    display: inline-block;
+    color: #fff;
+
+    text-decoration: none;
+    padding :14px 70px ;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.valorant-mp4{
+     position: absolute;
+     right: 0;
+     bottom: 0;
+     z-index: -1;
+
+}
+@media (min-aspect-ratio: 16/9){
+   .valorant-mp4
+   {
+    height: auto;
+    width:  100%;
+   }
+}
+@media (max-aspect-ratio: 16/9){
+    .valorant-mp4
+    {
+     height: 100%;
+     width: auto;
+    }
+ }
+ 
+#foter{
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+}
+.foter-logo{
+    font-size: 24px;
+
+}
+.foter-logo a{
+ text-decoration: none;
+ color: rgba(0,0,0, 0.6);
+}
+.foter-logo a:hover{
+    color: rgba(0,0,0, 0.4);
+}
+.foter p{
+    margin-top: 15px;
+    color: rgba(0,0,0, 0.4);
+
+
+}
